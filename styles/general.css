@@ -1,0 +1,80 @@
+body {
+    background: radial-gradient(to bottom left, rgba(0, 47, 255, 0.8), rgba(0, 204, 255, 0.8));
+    backdrop-filter: blur(10px);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    
+    background-image: radial-gradient(circle at center, rgb(0, 47, 255), rgb(0, 204, 255) 80%), 
+                      url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/Un4EswAAAAASUVORK5CYII=');
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.me {
+    width: 200px;
+    border: solid;
+    border-radius: 120px;
+    border-width: 3px;
+    border-color: white;
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px rgb(0, 217, 255);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Verdana";
+}
+
+h2 {
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+    font-family: "Verdana";
+    padding-bottom: 50px;
+}
+
+.myButtons {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Verdana";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    /* padding: 20px 150px 20px 150px; */
+    width: 500px;
+    height: 60px;
+    /* transition: width 0.3s, height 0.3s; */
+    transition: box-shadow 0.8s;
+
+}
+
+.myButtons:hover {
+
+    box-shadow: 10px 10px 10px rgb(0, 217, 255);
+    animation: buttonsBackground 0.8s forwards;
+    /* width: 502px;
+    height: 62px; */
+
+
+}
+
+@keyframes buttonsBackground {
+    0% { background-position: 100% 100%;}
+    30% {color: white;}
+    100% { background-position: 0% 0%; background-color: rgb(17, 132, 199); color: white; }
+    
+}
+
